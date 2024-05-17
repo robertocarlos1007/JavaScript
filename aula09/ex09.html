@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+ <style>
+
+    body {
+        background-color: rgb(8, 171, 247);  
+        color: rgb(253, 253, 253); 
+        font: normal 15pt Arial; 
+
+
+    }
+ </style>
+
+</head>
+<body>
+<h1>Introdução ao Dom</h1>
+<p><strong>Esse primeiro parágrafo possui a tag &lt;p&gt;</strong></p>
+<p id="p1">Esse segundo parágrafo possui o método ID.</p>
+<p class="p2">Esse terceiro parágrafo possui o método por classe.</p>
+<p name="p3">Esse quarto parágrafo possui o método por nome. </p>
+<div class="msg">Uma div</div>
+<p> Clique aqui!</p>
+<script>
+
+var p0 = window.document.getElementsByTagName('p')[0]
+var p1 = window.document.getElementById('p1')
+var p2 = window.document.getElementsByClassName('p2')[0]
+var p3 = window.document.getElementsByName('p3')[0]
+
+// var d = window.document.querySelector('div#msg') PARA DIV COM ID
+var d = window.document.querySelector('div.msg') // PARA DIV COM CLASSE
+d.style.color = 'red'
+
+// p0.innerText = "Apague essa vari para saber o realmente existe aqui."
+// document.write(p0.innerText)  Segunda forma de usar o innerText
+
+// p0.innerHTML = "Apague essa vari para saber o realmente existe aqui."
+// document.write(p0.innerHTML) // Segunda forma de usar o innerHTML. Aqui não se perde o uso do STRONG no texto. 
+ 
+</script>
+</body>
+</html> 
